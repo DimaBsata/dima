@@ -1,0 +1,24 @@
+
+
+ <!-- ******** Table to Show All Posts ******** -->
+  <table  class="table" style="text-align:center" border="1">
+
+   <!--********* Table Head ***********-->
+    <thead style="text-align:center; background-color:Silver;"> <tr>
+      <th>comment Id</th>
+      <th>comment User Id</th>
+      <th>comment Content</th>
+      <th>comment Date</th>
+    </tr></thead>
+
+    <!--********* Table Body ***********-->
+    <tbody>
+     <tr ng-repeat="comment in comments" class="{{clsses[$index%3]}}">
+         <td>{{comment.post_id}}</td>
+       <td>{{comment.user_id}}</td>
+       <td>{{comment.content}}</td>
+       <td>{{comment.date}}</td>
+      </tr>
+   </tbody>
+
+ </table>

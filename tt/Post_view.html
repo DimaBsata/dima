@@ -1,0 +1,24 @@
+
+
+ <!-- ******** Table to Show All Posts ******** -->
+  <table  class="table" style="text-align:center" border="1">
+
+   <!--********* Table Head ***********-->
+    <thead style="text-align:center; background-color:Silver;"> <tr>
+      <th>Post Title</th>
+      <th>Post Description</th>
+      <th>Post Content</th>
+      <th>Post Date</th>
+    </tr></thead>
+
+    <!--********* Table Body ***********-->
+    <tbody>
+     <tr ng-repeat="post in posts" class="{{clsses[$index%3]}}">
+         <td>{{post.title}}</td>
+       <td>{{post.description}}</td>
+       <td>{{post.content}}</td>
+       <td>{{post.date}}</td>
+      </tr>
+   </tbody>
+
+ </table>
